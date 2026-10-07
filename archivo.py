@@ -22,6 +22,7 @@ for num_linea, linea_sin_modificar in enumerate(datos, start=1):
         continue
 
     linea = linea_sin_modificar.rstrip("\n")
+    
     try:
         if len(linea) != 100:
             raise ValueError("La línea no tiene la longitud esperada")
@@ -84,6 +85,7 @@ for num_linea, linea_sin_modificar in enumerate(datos, start=1):
             "motivo" : str(error),
             "contenido" : linea_sin_modificar.strip()
         })
+        
 
 with open("observaciones2.json", "w", encoding="utf-8") as archivo:
     archivo.write("{\n")
@@ -111,6 +113,7 @@ with open("observaciones2.json", "w", encoding="utf-8") as archivo:
         archivo.write("\n")
 
     archivo.write("}\n")
+
 
 with open("lineas_invalidas.json", "w", encoding="utf-8") as archivo:
     json.dump(lineas_invalidas, archivo, indent=4, ensure_ascii=False)
