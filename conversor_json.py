@@ -1,13 +1,26 @@
 import sys
 import json
+import os
 from datetime import datetime
+
 
 #FECHA     HORA  TEMP   HUM   PNM    DD    FF     NOMBRE
 #         [HOA]  [°C]   [%]  [hPa]  [gr] [km/hr]
 #01082026     0  19.5   94  1004.3  250   13     AEROPARQUE AERO
 
 
+if len(sys.argv) != 3:
+    print("Faltan argumentos")
+    sys.exit(1)
+
+
+if not os.path.exists(sys.argv[1]):
+    print(f"El archivo: {sys.argv[1]}, no existe")
+    sys.exit(1)
+
+
 ruta = sys.argv[1]
+salida = sys.argv[2]
 registros_json = {}
 lineas_invalidas = []
 
@@ -22,7 +35,7 @@ for num_linea, linea_sin_modificar in enumerate(datos, start=1):
         continue
 
     linea = linea_sin_modificar.rstrip("\n")
-    
+
     try:
         if len(linea) != 100:
             raise ValueError("La línea no tiene la longitud esperada")
@@ -87,7 +100,7 @@ for num_linea, linea_sin_modificar in enumerate(datos, start=1):
         })
         
 
-with open("observaciones2.json", "w", encoding="utf-8") as archivo:
+with open(salida, "w", encoding="utf-8") as archivo:
     archivo.write("{\n")
 
     estaciones = list(registros_json.items())
@@ -120,5 +133,3 @@ with open("lineas_invalidas.json", "w", encoding="utf-8") as archivo:
 
 
 print(f"Procesamiento terminado. Estaciones: {len(registros_json)} | Errores: {len(lineas_invalidas)}")
-
-#python archivo.py datohorario20261002.txt

@@ -1,0 +1,362 @@
+[
+    {
+        "linea_numero": 465,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": "R AERO"
+    },
+    {
+        "linea_numero": 466,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": ""
+    },
+    {
+        "linea_numero": 468,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": "R AERO"
+    },
+    {
+        "linea_numero": 469,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": ""
+    },
+    {
+        "linea_numero": 471,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": "R AERO"
+    },
+    {
+        "linea_numero": 472,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": ""
+    },
+    {
+        "linea_numero": 474,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": "R AERO"
+    },
+    {
+        "linea_numero": 475,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": ""
+    },
+    {
+        "linea_numero": 477,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": "R AERO"
+    },
+    {
+        "linea_numero": 478,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": ""
+    },
+    {
+        "linea_numero": 480,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": "R AERO"
+    },
+    {
+        "linea_numero": 481,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": ""
+    },
+    {
+        "linea_numero": 483,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": "R AERO"
+    },
+    {
+        "linea_numero": 484,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": ""
+    },
+    {
+        "linea_numero": 486,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": "R AERO"
+    },
+    {
+        "linea_numero": 487,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": ""
+    },
+    {
+        "linea_numero": 489,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": "R AERO"
+    },
+    {
+        "linea_numero": 490,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": ""
+    },
+    {
+        "linea_numero": 492,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": "R AERO"
+    },
+    {
+        "linea_numero": 493,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": ""
+    },
+    {
+        "linea_numero": 495,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": "R AERO"
+    },
+    {
+        "linea_numero": 496,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": ""
+    },
+    {
+        "linea_numero": 498,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": "R AERO"
+    },
+    {
+        "linea_numero": 499,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": ""
+    },
+    {
+        "linea_numero": 501,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": "R AERO"
+    },
+    {
+        "linea_numero": 502,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": ""
+    },
+    {
+        "linea_numero": 504,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": "R AERO"
+    },
+    {
+        "linea_numero": 505,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": ""
+    },
+    {
+        "linea_numero": 507,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": "R AERO"
+    },
+    {
+        "linea_numero": 508,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": ""
+    },
+    {
+        "linea_numero": 1172,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": "ÑA AERO"
+    },
+    {
+        "linea_numero": 1173,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": ""
+    },
+    {
+        "linea_numero": 1175,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": "ÑA AERO"
+    },
+    {
+        "linea_numero": 1176,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": ""
+    },
+    {
+        "linea_numero": 1178,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": "ÑA AERO"
+    },
+    {
+        "linea_numero": 1179,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": ""
+    },
+    {
+        "linea_numero": 1181,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": "ÑA AERO"
+    },
+    {
+        "linea_numero": 1182,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": ""
+    },
+    {
+        "linea_numero": 1184,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": "ÑA AERO"
+    },
+    {
+        "linea_numero": 1185,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": ""
+    },
+    {
+        "linea_numero": 1187,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": "ÑA AERO"
+    },
+    {
+        "linea_numero": 1188,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": ""
+    },
+    {
+        "linea_numero": 1190,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": "ÑA AERO"
+    },
+    {
+        "linea_numero": 1191,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": ""
+    },
+    {
+        "linea_numero": 1193,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": "ÑA AERO"
+    },
+    {
+        "linea_numero": 1194,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": ""
+    },
+    {
+        "linea_numero": 1196,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": "ÑA AERO"
+    },
+    {
+        "linea_numero": 1197,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": ""
+    },
+    {
+        "linea_numero": 1199,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": "ÑA AERO"
+    },
+    {
+        "linea_numero": 1200,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": ""
+    },
+    {
+        "linea_numero": 1202,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": "ÑA AERO"
+    },
+    {
+        "linea_numero": 1203,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": ""
+    },
+    {
+        "linea_numero": 1205,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": "ÑA AERO"
+    },
+    {
+        "linea_numero": 1206,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": ""
+    },
+    {
+        "linea_numero": 1208,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": "ÑA AERO"
+    },
+    {
+        "linea_numero": 1209,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": ""
+    },
+    {
+        "linea_numero": 1211,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": "ÑA AERO"
+    },
+    {
+        "linea_numero": 1212,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": ""
+    },
+    {
+        "linea_numero": 1214,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": "ÑA AERO"
+    },
+    {
+        "linea_numero": 1215,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": ""
+    },
+    {
+        "linea_numero": 1217,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": "ÑA AERO"
+    },
+    {
+        "linea_numero": 1218,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": ""
+    },
+    {
+        "linea_numero": 1220,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": "ÑA AERO"
+    },
+    {
+        "linea_numero": 1221,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": ""
+    },
+    {
+        "linea_numero": 1223,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": "ÑA AERO"
+    },
+    {
+        "linea_numero": 1224,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": ""
+    },
+    {
+        "linea_numero": 1809,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": "O"
+    },
+    {
+        "linea_numero": 1810,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": ""
+    },
+    {
+        "linea_numero": 1812,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": "O"
+    },
+    {
+        "linea_numero": 1813,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": ""
+    },
+    {
+        "linea_numero": 1815,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": "O"
+    },
+    {
+        "linea_numero": 1816,
+        "motivo": "time data '' does not match format '%d%m%Y'",
+        "contenido": ""
+    }
+]
