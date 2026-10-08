@@ -23,16 +23,27 @@ ruta = sys.argv[1]
 salida = sys.argv[2]
 registros_json = {}
 lineas_invalidas = []
+cantidad_registros = 0
 
 
-with open(ruta, "r", encoding="latin-1") as archivo:
-    datos = archivo.readlines()
+try:
+    with open(ruta, "r", encoding="latin-1") as archivo:
+        datos = archivo.readlines()
+
+except OSError as error:
+    print(f"Error al leer el archivo: {error}")
+    sys.exit(1)
 
 
 for num_linea, linea_sin_modificar in enumerate(datos, start=1):
 
     if "FECHA" in linea_sin_modificar or "HOA" in linea_sin_modificar:
         continue
+
+    if not linea_sin_modificar.strip():
+        continue
+
+    cantidad_registros += 1
 
     linea = linea_sin_modificar.rstrip("\n")
 
@@ -96,40 +107,60 @@ for num_linea, linea_sin_modificar in enumerate(datos, start=1):
         lineas_invalidas.append({
             "linea_numero" : num_linea,
             "motivo" : str(error),
-            "contenido" : linea_sin_modificar.strip()
+            "contenido" : linea_sin_modificar.rstrip("\n")
         })
+
+
+cantidad_validos = cantidad_registros - len(lineas_invalidas)
         
 
-with open(salida, "w", encoding="utf-8") as archivo:
-    archivo.write("{\n")
+try:
+    with open(salida, "w", encoding="utf-8") as archivo:
+        archivo.write("{\n")
 
-    estaciones = list(registros_json.items())
+        archivo.write('    "informacion": {\n')
+        archivo.write(f'        "cantidad_registros": {cantidad_registros},\n')
+        archivo.write(f'        "cantidad_validos": {cantidad_validos},\n')
+        archivo.write(f'        "cantidad_invalidos": {len(lineas_invalidas)}\n')
+        archivo.write("    },\n")
 
-    for i, (nombre, datos) in enumerate(estaciones):
-        archivo.write(f'    {json.dumps(nombre, ensure_ascii=False)}: {{\n')
 
-        for j, (clave, valor) in enumerate(datos.items()):
-            archivo.write(
-                f'        {json.dumps(clave)}: {json.dumps(valor, ensure_ascii=False)}'
-            )
+        archivo.write('    "registros_validos": {\n')
 
-            if j < len(datos) - 1:
+        estaciones = list(registros_json.items())
+
+        for i, (nombre, datos) in enumerate(estaciones):
+            archivo.write(f'        {json.dumps(nombre, ensure_ascii=False)}: {{\n')
+
+            for j, (clave, valor) in enumerate(datos.items()):
+                archivo.write(
+                    f'              {json.dumps(clave)}: {json.dumps(valor, ensure_ascii=False)}'
+                )
+
+                if j < len(datos) - 1:
+                    archivo.write(",")
+
+                archivo.write("\n")
+
+            archivo.write("         }")
+
+            if i < len(estaciones) - 1:
                 archivo.write(",")
 
             archivo.write("\n")
 
-        archivo.write("    }")
+        archivo.write("    },\n")
 
-        if i < len(estaciones) - 1:
-            archivo.write(",")
+        archivo.write('    "registros invalidos": {\n')
 
+        archivo.write(json.dumps(lineas_invalidas, ensure_ascii=False, indent=4))
         archivo.write("\n")
 
-    archivo.write("}\n")
+        archivo.write("}\n")
 
-
-with open("lineas_invalidas.json", "w", encoding="utf-8") as archivo:
-    json.dump(lineas_invalidas, archivo, indent=4, ensure_ascii=False)
+except OSError as error:
+    print(f"Error al convertir archivo {error}")
+    sys.exit(1)
 
 
 print(f"Procesamiento terminado. Estaciones: {len(registros_json)} | Errores: {len(lineas_invalidas)}")
