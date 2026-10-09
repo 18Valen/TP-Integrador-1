@@ -27,7 +27,7 @@ Antes de ejecutar el programa, se debe disponer del archivo de texto con los dat
 El proyecto está organizado en módulos para separar las distintas responsabilidades del programa.
 
 * `conversor_json.py`: módulo principal que coordina la ejecución del programa.
-* `funciones.py`: contiene las funciones auxiliares para el procesamiento de los datos, las funciones encargadas de comprobar que los datos meteorológicos cumplan con los criterios de validación, y la generación del archivo de salida.
+* `validaciones.py`: contiene las funciones auxiliares para el procesamiento de los datos, las funciones encargadas de comprobar que los datos meteorológicos cumplan con los criterios de validación, y la generación del archivo de salida.
 * `archivo (.txt)`: archivo de entrada que contiene los registros meteorológicos que se desean procesar.
 
 ## 4) Ejecución del programa

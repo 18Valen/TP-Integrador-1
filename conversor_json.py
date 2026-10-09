@@ -1,22 +1,22 @@
 import sys
-import funciones
+import validaciones
 
 try:
-   ruta, salida = funciones.validar_argumentos(sys.argv)
+   ruta, salida = validaciones.validar_argumentos(sys.argv)
 except ValueError as error:
     print(f"Error: {error}")
     sys.exit(1)
 
 try:
-    datos = funciones.leer_archivo(ruta)
+    datos = validaciones.leer_archivo(ruta)
 except OSError as error:
     print(f"Error: {error}")
     sys.exit(1)
 
-registros_json, lineas_invalidas, cantidad_registros, cantidad_validos = funciones.validar_datos(datos)
+registros_json, lineas_invalidas, cantidad_registros, cantidad_validos = validaciones.validar_datos(datos)
 
 try:
-    funciones.crear_json(
+    validaciones.crear_json(
         salida,
         registros_json,
         lineas_invalidas,
